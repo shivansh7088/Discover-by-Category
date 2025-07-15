@@ -240,21 +240,7 @@ body {
   .carousel-wrapper {
     flex-direction: row;
   }
-  .arrow {
-    width: 24px;
-    height: 24px;
-    font-size: 1rem;
-    top: 45%;
-    z-index: 20;
-  }
-
-  .arrow.left {
-    left: -10px;
-  }
-
-  .arrow.right {
-    right: -10px;
-  }
+  
   .carousel {
     flex-direction: row;
     align-items: center;
@@ -262,10 +248,5 @@ body {
   .card {
     width: 100%;
   }
-  .logo-top-right {
-    width: 40px;
-    height: 40px;
-    top: 20px;
-    right: 20px;
-  }
+  
 }

@@ -251,7 +251,6 @@ body {
     scroll-snap-align: start;
   }
 
-   /* ✅ Keep arrows visible like desktop */
   .arrow {
     display: flex;
     width: 30px;

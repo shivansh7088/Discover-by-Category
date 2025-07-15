@@ -224,18 +224,10 @@ body {
 
 @media (max-width: 768px) {
   .tabs {
-    flex-direction: row;
-    align-items: center;
-    display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
-    gap: 16px;
     font-size: 0.9rem;
-    text-align: center;
-    overflow-x: auto;
-    white-space: nowrap;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  
   }
   .carousel-wrapper {
     flex-direction: row;

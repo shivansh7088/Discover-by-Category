@@ -224,28 +224,48 @@ body {
 
 @media (max-width: 768px) {
   .tabs {
-    flex-direction: row;
-    align-items: center;
-    display: flex;
     flex-wrap: wrap;
+    gap: 20px;
     justify-content: center;
-    gap: 16px;
     font-size: 0.9rem;
     text-align: center;
-    overflow-x: auto;
-    white-space: nowrap;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  
   }
+
   .carousel-wrapper {
-    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    position: relative;
   }
+
+   .carousel {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+   .card {
+    flex: 0 0 auto;
+    width: 85vw;
+    min-width: 85vw;
+    scroll-snap-align: start;
+  }
+
+   /* ✅ Keep arrows visible like desktop */
   .arrow {
-    width: 24px;
-    height: 24px;
-    font-size: 1rem;
-    top: 45%;
-    z-index: 20;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    top: 60%;
+    position: absolute;
+    z-index: 10;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background: #fff;
+    font-weight: bold;
   }
 
   .arrow.left {
@@ -255,17 +275,25 @@ body {
   .arrow.right {
     right: -10px;
   }
-  .carousel {
-    flex-direction: row;
-    align-items: center;
-  }
-  .card {
-    width: 100%;
-  }
+
+  /* ✅ Keep logo same size & position as desktop */
   .logo-top-right {
-    width: 40px;
-    height: 40px;
-    top: 20px;
-    right: 20px;
+    width: 60px;
+    height: 60px;
+    top: 50px;
+    right: 90px;
+    position: absolute;
+    z-index: 1000;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+
+  .logo-top-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
   }
 }

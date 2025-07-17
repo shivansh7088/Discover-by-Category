@@ -44,11 +44,7 @@ body {
   font: bold 1rem;
 }
 
-.tab.active {
-  font-weight: bold;
-  opacity: 1;
-  border-bottom: 2px solid #000;
-}
+
 
 
 
@@ -125,6 +121,7 @@ body {
   width: 100%;
   border-radius: 0px;
   display: block;
+  border: 0.1px solid ; 
 }
 
 .rating {
@@ -280,7 +277,7 @@ body {
     height: 50px;
     top: 10px;
     right: 10px;
-    position: fixed;
+    position: absolute;
     z-index: 1000;
     border-radius: 50%;
     background-color: white;
@@ -294,4 +291,38 @@ body {
     object-fit: cover;
     border-radius: 50%;
   }
+}
+
+
+/* Tabs ke liye CSS */
+input[name="tabs"] {
+  display: none;
+}
+
+/* 2. Sabhi tab-content ko by default hide karna */
+.tab-content {
+  display: none;
+}
+
+/* 3. Clicked (checked) tab ke content ko dikhana */
+#tab-shampoos:checked ~ .tabs-content-wrapper #content-shampoos,
+#tab-conditioners:checked ~ .tabs-content-wrapper #content-conditioners,
+#tab-leaveons:checked ~ .tabs-content-wrapper #content-leaveons,
+#tab-exfoliators:checked ~ .tabs-content-wrapper #content-exfoliators {
+  display: block;
+}
+
+/* 4. Clicked (checked) tab ke label ko active jaisa style dena */
+#tab-shampoos:checked ~ .tabs label[for="tab-shampoos"],
+#tab-conditioners:checked ~ .tabs label[for="tab-conditioners"],
+#tab-leaveons:checked ~ .tabs label[for="tab-leaveons"],
+#tab-exfoliators:checked ~ .tabs label[for="tab-exfoliators"] {
+  font-weight: bold;
+  opacity: 1;
+  border-bottom: 2px solid #000;
+}
+
+/* Tab ke label par cursor pointer laana (kyonki ab ye span nahi label hai) */
+.tab {
+  cursor: pointer;
 }

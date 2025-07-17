@@ -7,7 +7,7 @@ This project is a responsive front-end UI section built using **HTML & CSS**. It
 View Live Project(https://discover-by-category-section.vercel.app)
 
 ##  Features
-
+- Image border for bestseller tag
 - Responsive tabs
 - Horizontal product carousel
 - Left and right arrow controls
@@ -23,6 +23,9 @@ View Live Project(https://discover-by-category-section.vercel.app)
 ## Screenshot
 
 ./screenshot.png
+./ScreenshotCondi.png
+./Leave.png
+./Exfoliators.png
 
 ##  Contact
 

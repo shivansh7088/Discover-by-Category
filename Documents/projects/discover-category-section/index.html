@@ -7,96 +7,183 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
 </head>
 <body>
     <div class="logo-top-right">
-  <img src="assets/logo main.png" alt="My Logo">
-</div>
+      <img src="assets/logo main.png" alt="My Logo">
+    </div>
 
   <section class="category-section">
     <div class="container">
       <h2 class="section-heading">Discover by Category</h2>
 
+      <!-- Hidden radio buttons for tab logic -->
+      <input type="radio" name="tabs" id="tab-shampoos" checked>
+      <input type="radio" name="tabs" id="tab-conditioners">
+      <input type="radio" name="tabs" id="tab-leaveons">
+      <input type="radio" name="tabs" id="tab-exfoliators">
+      
+      <!-- Clickable Labels as Tabs -->
       <div class="tabs">
-        <span class="tab active">SHAMPOOS</span>
-        <span class="tab">CONDITIONERS</span>
-        <span class="tab">LEAVE-ONS</span>
-        <span class="tab">EXFOLIATORS</span>
+        <label for="tab-shampoos" class="tab">SHAMPOOS</label>
+        <label for="tab-conditioners" class="tab">CONDITIONERS</label>
+        <label for="tab-leaveons" class="tab">LEAVE-ONS</label>
+        <label for="tab-exfoliators" class="tab">EXFOLIATORS</label>
       </div>
 
-      <!--  carousel container -->
-      <div class="carousel-container">
-        <div class="carousel-wrapper">
-          <button class="arrow left"><i class="fas fa-arrow-left"></i></button>
+      <!-- Wrapper for all tab contents -->
+      <div class="tabs-content-wrapper">
 
-          <div class="carousel">
-            <!-- Card 1 -->
-            <div class="card">
-              <div class="image-wrapper">
-                <span class="badge">BESTSELLER</span>
-                <img src="assets/revive image.jpeg" alt="Product Image">
-              </div>
-              <div class="rating">
-                <span class="stars">★ </span>
-                <span class="rate">4.5</span>
-                <span class="count">(1425)</span>
-              </div>
-              <h3 class="product-title">Balancing Shampoo</h3>
-              <p class="desc">Ultra-luxe, calming daily cleanser targeting dandruff with medicated ingredient Zinc Pyrithione.</p>
-              <div class="add-cart">
-                <span>ADD TO CART</span>
-                <span>$25</span>
+        <!-- ===== CONTENT FOR SHAMPOOS TAB ===== -->
+        <div class="tab-content" id="content-shampoos">
+            <div class="carousel-container">
+              <div class="carousel-wrapper">
+                <button class="arrow left"><i class="fas fa-arrow-left"></i></button>
+                <div class="carousel">
+                  <!-- Card 1 -->
+                  <div class="card">
+                    <div class="image-wrapper"><span class="badge">BESTSELLER</span><img src="assets/revive image.jpeg" alt="Product Image"></div>
+                    <div class="rating"><span class="stars">★ </span><span class="rate">4.5</span><span class="count">(1425)</span></div>
+                    <h3 class="product-title">Balancing Shampoo</h3>
+                    <p class="desc">Ultra-luxe, calming daily cleanser targeting dandruff with medicated ingredient Zinc Pyrithione.</p>
+                    <div class="add-cart"><span>ADD TO CART</span><span>$25</span></div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="card">
+                    <div class="image-wrapper"><span class="badge">BESTSELLER</span><img src="assets/revive image.jpeg" alt="Product Image"></div>
+                    <div class="rating"><span class="stars">★ </span><span class="rate">4.5</span><span class="count">(1425)</span></div>
+                    <h3 class="product-title">Dandruff Rescue Shampoo</h3>
+                    <p class="desc">Medicated scalp solution that helps soothe irritation and reduce visible flakes over time.</p>
+                    <div class="add-cart"><span>ADD TO CART</span><span>$25</span></div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="card">
+                    <div class="image-wrapper"><span class="badge">BESTSELLER</span><img src="assets/revive image.jpeg" alt="Product Image"></div>
+                    <div class="rating"><span class="stars">★ </span><span class="rate">4.5</span><span class="count">(1425)</span></div>
+                    <h3 class="product-title">Soothing Scalp Shampoo</h3>
+                    <p class="desc">Ultra-luxe, calming daily cleanser targeting dandruff with medicated ingredient Zinc Pyrithione.</p>
+                    <div class="add-cart"><span>ADD TO CART</span><span>$25</span></div>
+                  </div>
+                </div>
+                <button class="arrow right"><i class="fas fa-arrow-right"></i></button>
               </div>
             </div>
+            <div class="shop-all-btn"><button>SHOP ALL SHAMPOOS</button></div>
+        </div>
 
-            <!-- Card 2 -->
-            <div class="card">
-              <div class="image-wrapper">
-                <span class="badge">BESTSELLER</span>
-                <img src="assets/revive image.jpeg" alt="Product Image">
+        <!-- ===== CONTENT FOR CONDITIONERS TAB ===== -->
+        <div class="tab-content" id="content-conditioners">
+            <div class="carousel-container">
+              <div class="carousel-wrapper">
+                <button class="arrow left"><i class="fas fa-arrow-left"></i></button>
+                <div class="carousel">
+                  <!-- Card 1 -->
+                  <div class="card">
+                    <div class="image-wrapper"><span class="badge">BESTSELLER</span><img src="assets/conditioner.png" alt="Product Image"></div>
+                    <div class="rating"><span class="stars">★ </span><span class="rate">4.7</span><span class="count">(1430)</span></div>
+                    <h3 class="product-title">Hydrating Restore Conditioner</h3>
+                    <p class="desc">Rich, creamy formula that delivers intense hydration and restores moisture to dry and brittle strands.</p>
+                    <div class="add-cart"><span>ADD TO CART</span><span>$21</span></div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="card">
+                    <div class="image-wrapper"><span class="badge">BESTSELLER</span><img src="assets/conditioner.png" alt="Product Image"></div>
+                    <div class="rating"><span class="stars">★ </span><span class="rate">4.7</span><span class="count">(1430)</span></div>
+                    <h3 class="product-title">Frizz-Free Shine Conditioner</h3>
+                    <p class="desc">Controls frizz while enhancing natural shine with a lightweight, non-greasy finish.</p>
+                    <div class="add-cart"><span>ADD TO CART</span><span>$22</span></div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="card">
+                    <div class="image-wrapper"><span class="badge">BESTSELLER</span><img src="assets/conditioner.png" alt="Product Image"></div>
+                    <div class="rating"><span class="stars">★ </span><span class="rate">4.7</span><span class="count">(1430)</span></div>
+                    <h3 class="product-title">Keratin Smooth Conditioner</h3>
+                    <p class="desc">Fortified with keratin to reduce breakage and make hair feel softer, smoother, and salon-fresh.</p>
+                    <div class="add-cart"><span>ADD TO CART</span><span>$20</span></div>
+                  </div>
+                </div>
+                <button class="arrow right"><i class="fas fa-arrow-right"></i></button>
               </div>
-              <div class="rating">
-                <span class="stars">★ </span>
-                <span class="rate">4.5</span>
-                <span class="count">(1425)</span>
-              </div>              <h3 class="product-title">Balancing Shampoo</h3>
-              <p class="desc">Ultra-luxe, calming daily cleanser targeting dandruff with medicated ingredient Zinc Pyrithione.</p>
-              <div class="add-cart">
-                <span>ADD TO CART</span>
-                <span>$25</span>
-              </div>
-              
             </div>
+            <div class="shop-all-btn"><button>SHOP ALL CONDITIONERS</button></div>
+        </div>
 
-            <!-- Card 3 -->
-            <div class="card">
-              <div class="image-wrapper">
-                <span class="badge">BESTSELLER</span>
-                <img src="assets/revive image.jpeg" alt="Product Image">
-              </div>
-              <div class="rating">
-                <span class="stars">★ </span>
-                <span class="rate">4.5</span>
-                <span class="count">(1425)</span>
-              </div>
-              <h3 class="product-title">Balancing Shampoo</h3>
-              <p class="desc">Ultra-luxe, calming daily cleanser targeting dandruff with medicated ingredient Zinc Pyrithione.</p>
-              <div class="add-cart">
-                <span>ADD TO CART</span>
-                <span>$25</span>
+        <!-- ===== CONTENT FOR LEAVE-ONS TAB ===== -->
+        <div class="tab-content" id="content-leaveons">
+            <div class="carousel-container">
+              <div class="carousel-wrapper">
+                <button class="arrow left"><i class="fas fa-arrow-left"></i></button>
+                <div class="carousel">
+                  <!-- Card 1 -->
+                  <div class="card">
+                    <div class="image-wrapper"><span class="badge">BESTSELLER</span><img src="assets/Daily Repair Serum1.jpg" alt="Product Image"></div>
+                    <div class="rating"><span class="stars">★ </span><span class="rate">4.2</span><span class="count">(1500)</span></div>
+                    <h3 class="product-title">Daily Repair Serum</h3>
+                    <p class="desc">Non-greasy, lightweight serum that strengthens hair, adds shine, and smoothens flyaways instantly.</p>
+                    <div class="add-cart"><span>ADD TO CART</span><span>$48</span></div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="card">
+                    <div class="image-wrapper"><span class="badge">BESTSELLER</span><img src="assets/Frizz Shield Leave-In1.jpg" alt="Product Image"></div>
+                    <div class="rating"><span class="stars">★ </span><span class="rate">4.4</span><span class="count">(1450)</span></div>
+                    <h3 class="product-title">Frizz Shield Leave-In</h3>
+                    <p class="desc">Leave-in styling cream enriched with shea butter and keratin to smoothen curls, reduce frizz, and define hair texture.</p>
+                    <div class="add-cart"><span>ADD TO CART</span><span>$35</span></div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="card">
+                    <div class="image-wrapper"><span class="badge">BESTSELLER</span><img src="assets/Split-End Therapy Cream.jpeg" alt="Product Image"></div>
+                    <div class="rating"><span class="stars">★ </span><span class="rate">4.1</span><span class="count">(1455)</span></div>
+                    <h3 class="product-title">Split-End Therapy Cream</h3>
+                    <p class="desc">Designed to repair and seal split ends while providing nourishment for stronger, longer hair.</p>
+                    <div class="add-cart"><span>ADD TO CART</span><span>$40</span></div>
+                  </div>
+                </div>
+                <button class="arrow right"><i class="fas fa-arrow-right"></i></button>
               </div>
             </div>
-          </div>
+            <div class="shop-all-btn"><button>SHOP ALL LEAVE-ONS</button></div>
+        </div>
 
-          <button class="arrow right"><i class="fas fa-arrow-right"></i></button>
+        <!-- ===== CONTENT FOR EXFOLIATORS TAB ===== -->
+        <div class="tab-content" id="content-exfoliators">
+            <div class="carousel-container">
+              <div class="carousel-wrapper">
+                <button class="arrow left"><i class="fas fa-arrow-left"></i></button>
+                <div class="carousel">
+                  <!-- Card 1 -->
+                  <div class="card">
+                    <div class="image-wrapper"><span class="badge">BESTSELLER</span><img src="assets/charcoal scrub.jpg" alt="Product Image"></div>
+                    <div class="rating"><span class="stars">★ </span><span class="rate">4.3</span><span class="count">(1440)</span></div>
+                    <h3 class="product-title">Charcoal Deep Clean Scrub</h3>
+                    <p class="desc">Crystal-infused scrub that removes buildup, excess oil, and dead skin, leaving the scalp feeling fresh and clean.</p>
+                    <div class="add-cart"><span>ADD TO CART</span><span>$35</span></div>
+                  </div>
+                  <!-- Card 2 -->
+                  <div class="card">
+                    <div class="image-wrapper"><span class="badge">BESTSELLER</span><img src="assets/Scalp Detox Scrub.jpg" alt="Product Image"></div>
+                    <div class="rating"><span class="stars">★ </span><span class="rate">4.3</span><span class="count">(1440)</span></div>
+                    <h3 class="product-title">Scalp Detox Scrub</h3>
+                    <p class="desc">Crystal-based exfoliant that deep cleanses scalp pores, removes buildup, and refreshes the roots.</p>
+                    <div class="add-cart"><span>ADD TO CART</span><span>$32</span></div>
+                  </div>
+                  <!-- Card 3 -->
+                  <div class="card">
+                    <div class="image-wrapper"><span class="badge">BESTSELLER</span><img src="assets/EXFOLIATORS.jpg" alt="Product Image"></div>
+                    <div class="rating"><span class="stars">★ </span><span class="rate">4.3</span><span class="count">(1440)</span></div>
+                    <h3 class="product-title">Tea Tree Scalp Polish</h3>
+                    <p class="desc">Antibacterial and cooling scrub with tea tree oil that purifies, soothes, and energizes the scalp.</p>
+                    <div class="add-cart"><span>ADD TO CART</span><span>$30</span></div>
+                  </div>
+                </div>
+                <button class="arrow right"><i class="fas fa-arrow-right"></i></button>
+              </div>
+            </div>
+            <div class="shop-all-btn"><button>SHOP ALL EXFOLIATORS</button></div>
         </div>
         
       </div>
-        
-             <div class="shop-all-btn">
-                <button>SHOP ALL SHAMPOOS</button>
-                </div>
+
     </div>
   </section>
 </body>
